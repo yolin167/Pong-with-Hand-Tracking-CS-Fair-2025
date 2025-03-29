@@ -113,11 +113,10 @@ def track_hand():
             player_x = min(max(x - paddle_width // 2, 0), WIDTH - paddle_width)
 
     # Show Camera Feed
-    frame = cv2.cvtColor(frame, cv2.COLOR_RGB2BGR)
     cv2.putText(frame, "Move Hand to Control Paddle", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (255, 255, 255), 2)
     cv2.imshow("Hand Tracking", frame)
 
-    root.after(10, track_hand)
+    root.after(5, track_hand)
 
 # Start Game
 track_hand()
