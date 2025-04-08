@@ -19,7 +19,7 @@ player_x = (WIDTH - paddle_width) // 2
 ai_x = (WIDTH - paddle_width) // 2
 ball_x, ball_y = WIDTH // 2, HEIGHT // 2
 ball_speed_x, ball_speed_y = 10, 10  # Ball speed (x and y direction)
-ai_speed = 6  # AI paddle speed
+ai_speed = 9  # AI paddle speed
 score_player, score_ai = 0, 0  # Score tracking
 game_over = False  # Game state
 
